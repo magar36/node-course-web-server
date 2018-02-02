@@ -32,12 +32,13 @@ app.use((req, resp, next) => {
   next();
 });
 
+/*** uncomment below if site is under maintenance ***/
 
-app.use((req,res,next) => {
-  res.render('maintenance.hbs', {
-    msg: 'Sorry for the inconvenience.'
-  });
-});
+// app.use((req,res,next) => {
+//   res.render('maintenance.hbs', {
+//     msg: 'Sorry for the inconvenience.'
+//   });
+// });
 
 app.use(express.static(__dirname + '/public'));
 
