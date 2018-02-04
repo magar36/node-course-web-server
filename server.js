@@ -64,21 +64,22 @@ hbs.registerHelper('uppercase',(text) => {
 //app.set('view engine','hbs');
 app.get('/about',(req,resp) => {
   resp.render('about.hbs',{
-    name: 'mohit agarwal'
+    name: 'Mohit Agarwal',
+    web: 'My first html page in node Js.'
   });
 });
 
 // this is to set your own views path: app.set('views', __dirname);
 app.get('/home',(req,resp) => {
   resp.render('home.hbs',{
-    name: 'mohit agarwal',
+    name: 'Hey There!',
     welcome: 'How are you??'
   });
 });
 
 app.get('/projects', (req,resp) => {
   resp.render('projects.hbs',{
-    project: 'project homepage.'
+    project: 'Project Homepage.'
   });
 });
 
