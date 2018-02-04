@@ -72,14 +72,14 @@ app.get('/about',(req,resp) => {
 // this is to set your own views path: app.set('views', __dirname);
 app.get('/home',(req,resp) => {
   resp.render('home.hbs',{
-    name: 'Hey There!',
+    name: 'Agarwal!',
     welcome: 'How are you??'
   });
 });
 
 app.get('/projects', (req,resp) => {
   resp.render('projects.hbs',{
-    project: 'Project Homepage.'
+    project: 'Project Homepage'
   });
 });
 
